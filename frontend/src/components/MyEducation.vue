@@ -1,9 +1,13 @@
 <script setup>
+import { ref, onMounted } from 'vue';
+import axios from 'axios';
 import SectionTitle from './SectionTitle.vue';
-// Data ini akan kita pindah ke backend nanti
-const educationHistory = [
-{ id: 1, period: '2023 - Sekarang', institution: 'Universitas Amikom Yogyakarta', major: 'S1 - Informatika' },
-{ id: 2, period: '2020 - 2023', institution: 'SMA Negeri 1 Karangmojo', major: 'MIPA' }];
+const educationHistory = ref([]);
+onMounted(async () => {try { const response = await
+axios.get('http://localhost:3000/api/education');
+educationHistory.value = response.data; } catch (error) {
+console.error(error); }
+});
 </script>
 <template>
 <section id="pendidikan" class="py-20 bg-white">
