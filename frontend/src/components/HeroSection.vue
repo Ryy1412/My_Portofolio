@@ -6,8 +6,8 @@ Halo, Saya <span class="text-blue-600">Rayyis Hammam Mukhayyar</span>
 </h1>
 <p class="text-xl text-gray-600 mb-8 animate-slide-in-left"
 style="animation-delay: 400ms;">
-Mahasiswa Teknik Informatika yang bersemangat dalam
-pengembangan web dan desain antarmuka.
+Saya Mahasiswa Informatika yang bersemangat dalam
+pengembangan Program, dan Website.
 </p>
 
 <!-- Badge Skill -->
@@ -22,13 +22,7 @@ pengembangan web dan desain antarmuka.
     Web Development
     </span>
     <span
-        class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full shadow-sm"
-        style="user-select:none;"
-    >
-    UI/UX Design
-    </span>
-    <span
-        class="bg-purple-100 text-purple-800 text-sm font-semibold px-3 py-1 rounded-full shadow-sm"
+        class="bg-orange-100 text-orange-800 text-sm font-semibold px-3 py-1 rounded-full shadow-sm"
         style="user-select:none;"
     >
     JavaScript
@@ -40,13 +34,13 @@ pengembangan web dan desain antarmuka.
     C++
     </span>
     <span
-        class="bg-purple-100 text-purple-800 text-sm font-semibold px-3 py-1 rounded-full shadow-sm"
+        class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full shadow-sm"
         style="user-select:none;"
     >
     C#
     </span>
     <span
-        class="bg-purple-100 text-purple-800 text-sm font-semibold px-3 py-1 rounded-full shadow-sm"
+        class="bg-yellow-100 text-yellow-800 text-sm font-semibold px-3 py-1 rounded-full shadow-sm"
         style="user-select:none;"
     >
     Python
