@@ -1,8 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
-import SectionTitle from './SectionTitle.vue';
-
+import SectionTitle from './SectionTitle.vue'; // Asumsi Anda punya komponen
 const certificate = ref([]);
 const API_URL = import.meta.env.PROD ? '/api/certificate' :
 'http://localhost:3000/api/certificate';
@@ -12,7 +11,7 @@ const response = await axios.get(API_URL);
 certificate.value = response.data;
 } catch (error)
 {
-console.error('Gagal mengambil data sertifikat:', error);
+console.error('Gagal mengambil data proyek:', error);
 }
 });
 </script>

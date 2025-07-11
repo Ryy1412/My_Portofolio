@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
-import SectionTitle from './SectionTitle.vue';
+import SectionTitle from './SectionTitle.vue'; // Asumsi Anda punya komponen
 const skills = ref([]);
 const API_URL = import.meta.env.PROD ? '/api/skills' :
 'http://localhost:3000/api/skills';
