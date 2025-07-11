@@ -8,7 +8,19 @@ const skills = [ { name: 'Vue.js', level: 'Menengah' }, { name: 'JavaScript', le
 { name: 'Tailwind CSS', level: 'Menengah' }, { name: 'Node.js', level:'Menengah' },
 { name: 'Express.js', level: 'Begginer' }, { name: 'C++',level: 'Menengah' },
 { name: 'Git & GitHub', level: 'Menengah' }, { name: 'HTML & CSS',level: 'Menengah' },
-{ name: 'C#',level: 'Menengah' }, { name: 'SQL',level: 'Menengah' },  
+{ name: 'C#',level: 'Menengah' }, { name: 'SQL',level: 'Menengah' },{ name: 'PHP',level: 'Menengah' },  
+];
+
+const certificate = [ 
+    { title: 'CCNA-_Introduction_to_Networks_certificate', 
+    image:'/src/assets/img/Cisco.png', 
+    link: 'https://drive.google.com/file/d/1nJaF8kEcxWRrHB55PlXYPO_5fzhY0NuU/view?usp=drive_link' },
+    { title: ' Introduction to Computer (ITC) 2023', 
+    image:'/src/assets/img/ITC.png', 
+    link: 'https://drive.google.com/file/d/15pBkvhmIUe1DX4xHeofTZgxS9dI0lm1H/view?usp=sharing' },
+    { title: ' AMCC WEB DEVELOPMENT (FRONTEND)', 
+    image:'/src/assets/img/WEBAMCC.png', 
+    link: 'https://drive.google.com/file/d/1lTXPgqVADbEyZopu2AA4QWvbgoaGiRyd/view?usp=drive_link' },
 ];
 
 const projects = [ 
@@ -29,4 +41,4 @@ const projects = [
     link: 'https://github.com/Ryy1412/Playlist-music-FP' }
 ];
 
-module.exports = { educationHistory, skills, projects };
+module.exports = { educationHistory, skills, projects, certificate };

@@ -1,0 +1,54 @@
+<script setup>
+import { ref, onMounted } from 'vue';
+import axios from 'axios';
+import SectionTitle from './SectionTitle.vue';
+
+const certificate = ref([]);
+
+onMounted(async () => {
+  try {
+    const response = await axios.get('http://localhost:3000/api/certificate');
+    certificate.value = response.data;
+  } catch (error) {
+    console.error('Gagal mengambil data sertifikat:', error);
+  }
+});
+</script>
+
+<template>
+  <section id="certificate" class="py-20 bg-gradient-to-r from-[#fbe4e4] via-[#fdfaf6] to-[#c9e4ca]">
+    <div class="container mx-auto px-6">
+      <SectionTitle title="Sertifikat" />
+      <div class="grid md:grid-cols-2 gap-12">
+        <div
+          v-for="item in certificate"
+          :key="item.title"
+          class="bg-[#fffaf0] rounded-lg shadow-lg overflow-hidden border border-[#e4cfc4]"
+        >
+          <img :src="item.image" alt="Gambar certificate" class="w-full h-56 object-cover" />
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-[#854442] mb-2">{{ item.title }}</h3>
+            <p class="text-[#5c5b57] mb-4">{{ item.description }}</p>
+            <div class="mb-4">
+              <span
+                v-for="tech in item.tech"
+                :key="tech"
+                class="inline-block bg-[#fbd6d2] text-[#8e354a] text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full"
+              >
+                {{ tech }}
+              </span>
+            </div>
+            <a
+              :href="item.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-[#6a5d5d] font-semibold hover:text-[#8e354a] transition-colors duration-200"
+            >
+              Lihat Detail &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

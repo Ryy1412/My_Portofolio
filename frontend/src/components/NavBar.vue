@@ -13,7 +13,10 @@ transform hover:-translate-y-0.5 transition-all duration-
 transform hover:-translate-y-0.5 transition-all duration-
 300">Skill</a></li><li><a href="#proyek" class="text-white hover:text-gray-600 
 transform hover:-translate-y-0.5 transition-all duration-
-300">Proyek</a></li>
+300">Project</a></li>
+<li><a href="#certificate " class="text-white hover:text-gray-600 
+transform hover:-translate-y-0.5 transition-all duration-
+300">Sertifikat</a></li>
 <li><a href="#kontak" class="text-white hover:text-gray-600 
 transform hover:-translate-y-0.5 transition-all duration-
 300">Kontak</a></li>
