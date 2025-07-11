@@ -2,16 +2,11 @@
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import SectionTitle from './SectionTitle.vue';
-
 const certificate = ref([]);
-
 onMounted(async () => {
-  try {
-    const response = await axios.get('http://localhost:3000/api/certificate');
-    certificate.value = response.data;
-  } catch (error) {
-    console.error('Gagal mengambil data sertifikat:', error);
-  }
+try { const response = await
+axios.get('http://localhost:3000/api/certificate'); certificate.value =
+response.data; } catch (error) { console.error(error); }
 });
 </script>
 

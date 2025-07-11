@@ -4,10 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "vue-cli-service build",
-"serve": "vue-cli-service serve",
+
     "dev": "vite",
-    "build": "vite build",
+    "build:vite": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --fix",
     "format": "prettier --write src/"
