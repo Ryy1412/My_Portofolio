@@ -16,7 +16,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <section id="certificate" class="py-20 bg-gradient-to-r from-[#fbe4e4] via-[#fdfaf6] to-[#c9e4ca]">
+  <section id="certificate" class="py-20 bg-gradient-to-r from-[#fdfaf6] via-[#dcedc1] to-[#c9e4ca]">
     <div class="container mx-auto px-6">
       <SectionTitle title="Sertifikat" />
       <div class="grid md:grid-cols-2 gap-12">
@@ -27,13 +27,13 @@ onMounted(async () => {
         >
           <img :src="item.image" alt="Gambar certificate" class="w-full h-56 object-cover" />
           <div class="p-6">
-            <h3 class="text-2xl font-bold text-[#854442] mb-2">{{ item.title }}</h3>
-            <p class="text-[#5c5b57] mb-4">{{ item.description }}</p>
+            <h3 class="text-2xl font-bold text-[#6a3e3e] mb-2">{{ item.title }}</h3>
+            <p class="text-[#6f5f5f] mb-4">{{ item.description }}</p>
             <div class="mb-4">
               <span
                 v-for="tech in item.tech"
                 :key="tech"
-                class="inline-block bg-[#fbd6d2] text-[#8e354a] text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full"
+                class="inline-block bg-[#fce1dd] text-[#944040] text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full"
               >
                 {{ tech }}
               </span>
@@ -42,7 +42,7 @@ onMounted(async () => {
               :href="item.link"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-[#6a5d5d] font-semibold hover:text-[#8e354a] transition-colors duration-200"
+              class="text-[#7a6b6b] font-semibold hover:text-[#8e354a] transition-colors duration-200"
             >
               Lihat Detail &rarr;
             </a>

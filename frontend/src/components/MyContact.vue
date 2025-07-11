@@ -12,7 +12,7 @@ function openGmail() {
 </script>
 
 <template>
-<footer id="kontak" class="py-20 bg-[#4a3f3f] text-[#fdfaf6]">
+<footer id="kontak" class="py-20 bg-gradient-to-b from-[#fcefe8] to-[#4a3f3f]">
 <div class="container mx-auto px-6 text-center">
 <SectionTitle title="Hubungi Saya" />
 <p class="text-xl text-[#e5dad4] mb-8">Jangan ragu untuk terhubung atau bertanya.</p>
@@ -27,7 +27,7 @@ function openGmail() {
 <a href="https://www.linkedin.com/in/rayyis-hammam-02399a373/" target="_blank" class="text-[#eacfc3] hover:text-[#fbd6d2] transition-colors duration-300">LinkedIn</a>
 
 </div>
-<p class="text-[#d0bfb7]">&copy; {{ new Date().getFullYear() }} Rayyis Hammam Mukhayyar. Dibuat dengan senyum dan stress ^w^
+<p class="text-[#d0bfb7]">&copy; {{ new Date().getFullYear() }} Rayyis Hammam Mukhayyar. Dibuat dengan senyum dan semangat ^w^
 </p>
 </div>
 </footer>
